@@ -1,0 +1,5 @@
+django
+djangorestframework-simplejwt
+pillow
+rest_framework
+django-environ
