@@ -76,4 +76,13 @@ python manage.py migrate
 Like Register api - http://127.0.0.1:8000/register/
 ```
 
+> ##### 9. Postman api collection
+
+```
+User authentication api-https://www.postman.com/planetary-astronaut-600987/workspace/thinkwik-task/collection/23031692-9e021a26-f72d-475d-993c-2a9ad7e2e34b?action=share&creator=23031692
+
+Assessment api-https://www.postman.com/planetary-astronaut-600987/workspace/thinkwik-task/collection/23031692-dcb9923d-da57-4164-bd88-48a62c6662ea?action=share&creator=23031692
+
+```
+
 <br />
