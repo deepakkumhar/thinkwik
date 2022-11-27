@@ -12,7 +12,7 @@ class User(AbstractBaseUser):
     password = models.CharField(max_length=100)
     username = models.CharField(max_length=100,null=False)
     email = models.EmailField(unique=True,db_index=True,null=False)
-    profile_photo = models.FileField(null=False,upload_to="profile_pic/")
+    profile_photo = models.FileField(null=False)
     user_type = models.CharField(max_length=10,choices = USER_TYPE)
 
     USERNAME_FIELD = 'email'
