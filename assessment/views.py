@@ -173,35 +173,6 @@ class ListAssessment(generics.ListAPIView):
     def get_queryset(self):
         return super().get_queryset()
     
-    # pagination_class = LargeResultsSetPagination
-# def get_queryset(self):
-#     queryset = Funder.objects.all()
-#     name = self.request.query_params.get('term')
-#     if name is not None:
-#         queryset = queryset.filter(Funder_name__exact=name)
-#     return queryset
-
-    # serializer_class = PostSerializer
-    # model = serializer_class.Meta.model
-    # paginate_by = 100
-    # def get_queryset(self):
-    #     poster_id = self.kwargs['poster_id']
-    #     queryset = self.model.objects.filter(poster_id=poster_id)
-    #     return queryset.order_by('-post_time')
-    # def get(self, request, *args, **kwargs):
-        # list_assessment=[]
-        # for assessment in Assessment.objects.all():
-        #     list_assessment.append({
-        #         "id":assessment.id,
-        #         "subject_name":assessment.subject_name,
-        #         "date_time":datetime.datetime.fromtimestamp(assessment.date_time) ,
-        #         "created_by":assessment.created_by
-        #     })
-        # return Response({
-        # "message": "assessment listing",
-        #     "data": list_assessment
-        # })
-
 
 #assessment details api
 class DetailsAssessment(generics.GenericAPIView):
